@@ -1,0 +1,5 @@
+default:
+  first_name: Default
+  last_name: Example
+  email: default@tmsg.io
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
